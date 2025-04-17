@@ -1,0 +1,19 @@
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = "node_modules/.bin/prettier", args = [ "--parser", "typescript" ] }
+language-servers = ["typescript-language-server", "vscode-eslint-language-server"]
+
+[[language]]
+name = "tsx"
+auto-format = true
+formatter = { command = "node_modules/.bin/prettier", args = [ "--parser", "typescript" ] }
+language-servers = ["typescript-language-server", "vscode-eslint-language-server"]
+
+[[language]]
+name = "markdown"
+
+# Soft-wrap markdown files.
+[language.soft-wrap]
+enable = true
+wrap-at-text-width = true
