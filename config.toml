@@ -1,17 +1,18 @@
 theme = "catppuccin_mocha"
 
 [editor]
-scroll-lines = 1
-line-number = "relative"
-completion-replace = true
-true-color = true
-undercurl = true
-rulers = [ 100 ]
 bufferline = "multiple"
 color-modes = true
-text-width = 100
-popup-border = "all"
+completion-replace = true
+cursorline = true
 end-of-line-diagnostics = "hint"
+line-number = "relative"
+popup-border = "all"
+rulers = [ 100 ]
+scroll-lines = 1
+text-width = 100
+true-color = true
+undercurl = true
 
 [editor.cursor-shape]
 insert = "bar"
