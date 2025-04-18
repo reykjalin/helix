@@ -17,14 +17,12 @@ language-servers = [ "superhtml" ]
 [[language]]
 name = "javascript"
 language-servers = [ "typescript-language-server", "vscode-eslint-language-server" ]
-indent = { tab-width = 4, unit = "\t" }
 formatter = { command = "npx", args = [ "prettier", "--parser", "typescript" ] }
 auto-format = true
 
 [[language]]
 name = "jsx"
 language-servers = [ "typescript-language-server", "vscode-eslint-language-server" ]
-indent = { tab-width = 4, unit = "\t" }
 formatter = { command = "npx", args = [ "prettier", "--parser", "typescript" ] }
 auto-format = true
 
@@ -43,6 +41,5 @@ language-servers = [ "typescript-language-server", "vscode-eslint-language-serve
 
 [[language]]
 name = "svelte"
-indent = { tab-width = 4, unit = "\t" }
 formatter = { command = "npx", args = [ "prettier", "--parser", "svelte" ] }
 auto-format = true
