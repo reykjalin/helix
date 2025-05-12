@@ -8,3 +8,6 @@
 
 !.prettierrc
 !.eslintrc
+
+!.builds
+!.github
