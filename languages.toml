@@ -1,5 +1,8 @@
 # Extends the base config from https://github.com/helix-editor/helix/blob/master/languages.toml
 
+[language-server.efm]
+command = "efm-langserver"
+
 [[language]]
 name = "markdown"
 
@@ -43,3 +46,10 @@ language-servers = [ "typescript-language-server", "vscode-eslint-language-serve
 name = "svelte"
 formatter = { command = "npx", args = [ "prettier", "--parser", "svelte" ] }
 auto-format = true
+
+[[language]]
+name = "zig"
+language-servers = [
+    { name = "efm", only-features = [ "diagnostics" ] },
+    { name = "zls", except-features = [ "diagnostics" ] },
+]
