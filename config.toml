@@ -1,6 +1,8 @@
 theme = "catppuccin_mocha"
+# theme = "catppuccin_latte"
 
 [editor]
+auto-pairs = false
 bufferline = "multiple"
 color-modes = true
 completion-replace = true
@@ -28,3 +30,22 @@ other-lines = "warning"
 
 [keys.insert]
 j = { k = "normal_mode" }
+
+[keys.normal.space.o]
+f = ":sh zellij run -n open-file -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-fuzzy-picker.fish open %{buffer_name}"
+y = ":sh zellij run -n Yazi -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-yazi-picker.fish open %{buffer_name}"
+t = ":sh zellij run -n dev-test -f -x 10%% -y 10%% --width 80%% --height 80%% -- dev test %{buffer_name}"
+l = ":sh zellij run -n stylelint -f -x 10%% -y 10%% --width 80%% --height 80%% -- npx stylelint %{buffer_name}"
+e = ":sh zellij run -n eslint -f -x 10%% -y 10%% --width 80%% --height 80%% -- npx eslint %{buffer_name}"
+
+[keys.normal.space.o.g]
+d = ":sh zellij run -n git-diff --floating -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-git-diff.fish %{buffer_name}"
+D = ":sh zellij run -n git-diff --floating -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-git-diff.fish"
+
+[keys.normal.space.o.v]
+f = ":sh zellij run -n open-file -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-fuzzy-picker.fish vsplit %{buffer_name}"
+y = ":sh zellij run -n Yazi -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-yazi-picker.fish vsplit %{buffer_name}"
+
+[keys.normal.space.o.h]
+f = ":sh zellij run -n open-file -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-fuzzy-picker.fish hsplit %{buffer_name}"
+y = ":sh zellij run -n Yazi -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-yazi-picker.fish hsplit %{buffer_name}"
