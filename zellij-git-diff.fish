@@ -1,5 +1,5 @@
 if type --query difft
-    git -c diff.external=difft diff $argv
+    GIT_PAGER="less -+F --clear-screen" git -c diff.external=difft diff $argv
 else
-    git diff $argv
+    GIT_PAGER="less -+F --clear-screen" git diff $argv
 end

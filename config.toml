@@ -39,8 +39,8 @@ l = ":sh zellij run -n stylelint -f -x 10%% -y 10%% --width 80%% --height 80%% -
 e = ":sh zellij run -n eslint -f -x 10%% -y 10%% --width 80%% --height 80%% -- npx eslint %{buffer_name}"
 
 [keys.normal.space.o.g]
-d = ":sh zellij run -n git-diff --floating -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-git-diff.fish %{buffer_name}"
-D = ":sh zellij run -n git-diff --floating -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-git-diff.fish"
+d = ":sh zellij run -n git-diff -c --floating -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-git-diff.fish %{buffer_name}"
+D = ":sh zellij run -n git-diff -c --floating -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-git-diff.fish"
 
 [keys.normal.space.o.v]
 f = ":sh zellij run -n open-file -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- fish ~/.config/helix/zellij-fuzzy-picker.fish vsplit %{buffer_name}"
